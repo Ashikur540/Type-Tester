@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1 class="title"><img src="./Img/logo.png" />
+        <a href="./index.html">Home</a>
+    </h1>
+    <div class="box-container" id="qs-container">
+        <div class="title2" style="text-align: center;  background: rgb(255, 255, 255);
+        background: linear-gradient(
+          92.49deg,
+          rgba(255, 255, 255, 0.1) 0.18%,
+          rgba(255, 255, 255, 0.05) 99.85%
+        ); margin: .8rem 0; padding: .8rem;">
+            <h1>Here, some of the common questions</h1>
+        </div>
+        <div class="divider-container">
+            <div class="line"></div>
+            <h1 class="title2">Answers</h1>
+            <div class="line"></div>
+        </div>
+
+
+        <!-- Answers  -->
+        <article class="Ans-card">
+            <h3>Local stograge VS Session storage</h3>
+            <p class="ans-para">
+                localStorage and sessionStorage are almost the same.But,The one major difference between localStorage
+                and sessionStorage is the expiration date.<br><br>
+                <span class="ans-tittle">Local storage: </span>
+                persists the storage across browser sessions. So even if the domain is opened in a new tab, or the
+                browser is closed and reopened, the storage is saved. There is no expiration.<br><br>
+                <span class="ans-tittle">Session storage: </span>
+                is cleared when the page session ends. A page session lasts as long as the tab or the browser is open.
+                Therefore, when you open a new tab or a new window, this creates a new session and new storage.
+            </p>
+        </article>
+
+        <article class="Ans-card">
+            <h3>Global Scope Vs. Block Scope</h3>
+            <p class="ans-para">
+                Although, there used to be only two types of scopes before ES6, the global scope, and the local scope.
+                But, with ES6 local scope was broken down into function scope and block scope.<br><br>
+
+                <span class="ans-tittle">Global Scope: </span>
+                The variables defined outside of any function or curly brackets are known as global variables and have
+                global scope. Global scope means that the variables can be accessed from any part of that program, any
+                function or conditional state can access that variable.<br><br>
+                <span class="ans-tittle">Block Scope: </span>
+                is also a sub-type of local scope. The block scope can be defined as the scope of the variables inside
+                the curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or
+                something else. You are only allowed to refer to these variables from within the curly brackets {}.
+            </p>
+        </article>
+
+
+        <article class="Ans-card">
+            <h3>What is Event Loop?</h3>
+            <p class="ans-para">
+                When we invoke a function, it gets added to something called the call stack. The call stack is part of
+                the JS engine, this isn’t browser specific. It’s a stack, meaning that it’s first in, last out (think of
+                a pile of pancakes). When a function returns a value, it gets popped off the stack.
+            <figure>
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--44yasyNX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gid1.6.gif"
+                    style="border-radius: 10px;">
+
+            </figure>
+            </p>
+            <div class="ans-para"><a href="https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif"
+                    style="color: #80ed99;">Visit to see Deatails</a></div>
+        </article>
+
+        <article class="Ans-card">
+            <h3>Differnt scenarios when we get <code
+                    style="background-color: rgb(136, 136, 136); padding: .2rem .8rem; border-radius: 5px;">undefined</code>
+                in javascript?</h3>
+            <p class="ans-para">
+                <li>Every JavaScript variable that we create without assigning any value gets the value of undefined.
+                </li>
+            </p>
+            <p class="ans-para">
+                <li>In JavaScript number of arguments that we supply does not have to match the Parameters of the
+                    functions. The unpassed arguments are set to undefined.</li>
+            </p>
+            <p class="ans-para">
+                <li>When a function has no return value, it returns undefined.</li>
+            </p>
+            <p class="ans-para">
+                <li>Trying to access a non-existing property of an object returns undefined.<br>Similarly, Non-existing
+                    array elements also return undefined.</li>
+            </p>
+            <p class="ans-para">
+                <li>The void operator always returns undefined irrespective of the expression provided to it.</li>
+            </p>
+            <div class="ans-para"><a href="https://www.tektutorialshub.com/javascript/javascript-undefined-datatyp"
+                    style="color: #80ed99;">Visit to see Deatails</a></div>
+        </article>
+    </div>
+
+
+
+</body>
+
+</html>
